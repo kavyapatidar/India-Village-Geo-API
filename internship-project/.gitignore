@@ -1,0 +1,15 @@
+node_modules/
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# Prisma/local database artifacts
+*.db
+*.db-journal
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/

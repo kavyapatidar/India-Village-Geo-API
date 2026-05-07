@@ -1,0 +1,367 @@
+{
+  "importedAt": "2026-05-07T06:43:32.695Z",
+  "mode": "dry-run",
+  "datasetFiles": 30,
+  "totalRowsRead": 570435,
+  "usableVillageRows": 564397,
+  "skippedRows": 6038,
+  "skipReasons": {
+    "District code is all zeroes": 29,
+    "Sub-district code is all zeroes": 536,
+    "Village code is all zeroes": 5422,
+    "Missing subDistrictCode": 1,
+    "Missing stateCode": 50
+  },
+  "skippedSamples": [
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "District code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "000",
+        "districtName": "HIMACHAL PRADESH",
+        "subDistrictCode": "00000",
+        "subDistrictName": "HIMACHAL PRADESH",
+        "villageCode": "000000",
+        "villageName": "HIMACHAL PRADESH"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Sub-district code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "023",
+        "districtName": "Chamba",
+        "subDistrictCode": "00000",
+        "subDistrictName": "Chamba",
+        "villageCode": "000000",
+        "villageName": "Chamba"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "023",
+        "districtName": "Chamba",
+        "subDistrictCode": "00083",
+        "subDistrictName": "Pangi",
+        "villageCode": "000000",
+        "villageName": "Pangi"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "023",
+        "districtName": "Chamba",
+        "subDistrictCode": "00084",
+        "subDistrictName": "Chaurah",
+        "villageCode": "000000",
+        "villageName": "Chaurah"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "023",
+        "districtName": "Chamba",
+        "subDistrictCode": "00085",
+        "subDistrictName": "Saluni",
+        "villageCode": "000000",
+        "villageName": "Saluni"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "023",
+        "districtName": "Chamba",
+        "subDistrictCode": "00086",
+        "subDistrictName": "Bhalai",
+        "villageCode": "000000",
+        "villageName": "Bhalai"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "023",
+        "districtName": "Chamba",
+        "subDistrictCode": "00087",
+        "subDistrictName": "Dalhousie",
+        "villageCode": "000000",
+        "villageName": "Dalhousie"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "023",
+        "districtName": "Chamba",
+        "subDistrictCode": "00088",
+        "subDistrictName": "Bhattiyat",
+        "villageCode": "000000",
+        "villageName": "Bhattiyat"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "023",
+        "districtName": "Chamba",
+        "subDistrictCode": "00089",
+        "subDistrictName": "Sihunta",
+        "villageCode": "000000",
+        "villageName": "Sihunta"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "023",
+        "districtName": "Chamba",
+        "subDistrictCode": "00090",
+        "subDistrictName": "Chamba",
+        "villageCode": "000000",
+        "villageName": "Chamba"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "023",
+        "districtName": "Chamba",
+        "subDistrictCode": "00091",
+        "subDistrictName": "Holi",
+        "villageCode": "000000",
+        "villageName": "Holi"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "023",
+        "districtName": "Chamba",
+        "subDistrictCode": "00092",
+        "subDistrictName": "Brahmaur",
+        "villageCode": "000000",
+        "villageName": "Brahmaur"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Sub-district code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "024",
+        "districtName": "Kangra",
+        "subDistrictCode": "00000",
+        "subDistrictName": "Kangra",
+        "villageCode": "000000",
+        "villageName": "Kangra"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "024",
+        "districtName": "Kangra",
+        "subDistrictCode": "00093",
+        "subDistrictName": "Nurpur",
+        "villageCode": "000000",
+        "villageName": "Nurpur"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "024",
+        "districtName": "Kangra",
+        "subDistrictCode": "00094",
+        "subDistrictName": "Indora",
+        "villageCode": "000000",
+        "villageName": "Indora"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "024",
+        "districtName": "Kangra",
+        "subDistrictCode": "00095",
+        "subDistrictName": "Fatehpur",
+        "villageCode": "000000",
+        "villageName": "Fatehpur"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "024",
+        "districtName": "Kangra",
+        "subDistrictCode": "00096",
+        "subDistrictName": "Jawali",
+        "villageCode": "000000",
+        "villageName": "Jawali"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "024",
+        "districtName": "Kangra",
+        "subDistrictCode": "00097",
+        "subDistrictName": "Harchakian",
+        "villageCode": "000000",
+        "villageName": "Harchakian"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "024",
+        "districtName": "Kangra",
+        "subDistrictCode": "00098",
+        "subDistrictName": "Shahpur",
+        "villageCode": "000000",
+        "villageName": "Shahpur"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "024",
+        "districtName": "Kangra",
+        "subDistrictCode": "00099",
+        "subDistrictName": "Dharmsala",
+        "villageCode": "000000",
+        "villageName": "Dharmsala"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "024",
+        "districtName": "Kangra",
+        "subDistrictCode": "00100",
+        "subDistrictName": "Kangra",
+        "villageCode": "000000",
+        "villageName": "Kangra"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "024",
+        "districtName": "Kangra",
+        "subDistrictCode": "00101",
+        "subDistrictName": "Nagrota Bagwan",
+        "villageCode": "000000",
+        "villageName": "Nagrota Bagwan"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "024",
+        "districtName": "Kangra",
+        "subDistrictCode": "00102",
+        "subDistrictName": "Baroh",
+        "villageCode": "000000",
+        "villageName": "Baroh"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "024",
+        "districtName": "Kangra",
+        "subDistrictCode": "00103",
+        "subDistrictName": "Dera Gopipur",
+        "villageCode": "000000",
+        "villageName": "Dera Gopipur"
+      }
+    },
+    {
+      "file": "Rdir_2011_02_HIMACHAL_PRADESH.xls",
+      "reason": "Village code is all zeroes",
+      "row": {
+        "stateCode": "02",
+        "stateName": "HIMACHAL PRADESH",
+        "districtCode": "024",
+        "districtName": "Kangra",
+        "subDistrictCode": "00104",
+        "subDistrictName": "Jawalamukhi",
+        "villageCode": "000000",
+        "villageName": "Jawalamukhi"
+      }
+    }
+  ]
+}

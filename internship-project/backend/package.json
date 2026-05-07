@@ -1,0 +1,27 @@
+{
+  "name": "india-geo-api-backend",
+  "version": "1.0.0",
+  "description": "Beginner friendly backend starter for India geography SaaS internship project",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "prisma:generate": "prisma generate",
+    "import:mdds:dry": "node scripts/importMdds.js --dry-run",
+    "import:mdds": "node scripts/importMdds.js --write",
+    "db:counts": "node scripts/checkDbCounts.js",
+    "seed:apikey": "node scripts/createTestApiKey.js",
+    "seed:admin": "node scripts/createAdminUser.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.7.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "prisma": "^6.7.0"
+  }
+}

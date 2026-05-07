@@ -1,0 +1,129 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Country {
+  id        Int      @id @default(autoincrement())
+  name      String
+  code      String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  states State[]
+
+  @@index([name])
+}
+
+model State {
+  id        Int      @id @default(autoincrement())
+  countryId Int
+  name      String
+  stateCode String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  country   Country    @relation(fields: [countryId], references: [id])
+  districts District[]
+
+  @@index([countryId])
+  @@index([name])
+}
+
+model District {
+  id           Int      @id @default(autoincrement())
+  stateId      Int
+  name         String
+  districtCode String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  state        State         @relation(fields: [stateId], references: [id])
+  subDistricts SubDistrict[]
+
+  @@unique([stateId, districtCode])
+  @@index([stateId])
+  @@index([name])
+  @@index([districtCode])
+}
+
+model SubDistrict {
+  id              Int      @id @default(autoincrement())
+  districtId      Int
+  name            String
+  subDistrictCode String
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  district  District  @relation(fields: [districtId], references: [id])
+  villages  Village[]
+
+  @@unique([districtId, subDistrictCode])
+  @@index([districtId])
+  @@index([name])
+  @@index([subDistrictCode])
+}
+
+model Village {
+  id           Int      @id @default(autoincrement())
+  subDistrictId Int
+  name         String
+  villageCode  String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  subDistrict  SubDistrict @relation(fields: [subDistrictId], references: [id])
+
+  @@unique([subDistrictId, villageCode])
+  @@index([subDistrictId])
+  @@index([name])
+  @@index([villageCode])
+}
+
+model User {
+  id           Int      @id @default(autoincrement())
+  name         String
+  email        String   @unique
+  passwordHash String
+  role         String   @default("CLIENT")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  apiKeys ApiKey[]
+
+  @@index([role])
+}
+
+model ApiKey {
+  id         Int      @id @default(autoincrement())
+  userId     Int
+  key        String   @unique
+  secretHash String
+  status     String   @default("ACTIVE")
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  user    User     @relation(fields: [userId], references: [id])
+  apiLogs ApiLog[]
+
+  @@index([userId])
+  @@index([status])
+}
+
+model ApiLog {
+  id           Int      @id @default(autoincrement())
+  apiKeyId     Int
+  endpoint     String
+  responseTime Int
+  createdAt    DateTime @default(now())
+
+  apiKey ApiKey @relation(fields: [apiKeyId], references: [id])
+
+  @@index([apiKeyId, createdAt])
+  @@index([endpoint])
+  @@index([createdAt])
+}
